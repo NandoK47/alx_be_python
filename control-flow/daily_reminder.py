@@ -1,6 +1,6 @@
 task = input("Enter your task: ")
-priority = input("Priority (high/medium/low): ")
-time_bound = input("Is it time-bound? (yes/no): ")
+priority = input("Priority (high/medium/low): ").lower()
+time_bound = input("Is it time-bound? (yes/no): ").lower()
 
 match priority:
     case "high":
@@ -18,4 +18,4 @@ elif time_bound == "no":
     reminder = "Consider completing it when you have free time."
 else:
     reminder = "Invalid time sensitivity input."        
-print("\nReminder: {reminder}")
+print("Reminder: {reminder}")
