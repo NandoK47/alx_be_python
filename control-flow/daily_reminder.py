@@ -13,8 +13,9 @@ match priority:
         reminder = print("Invalid priority level entered.")
 
 if time_bound == "yes":
-    reminder += print("It requires immediate attention today!")
+    reminder = "It requires immediate attention today!"
 elif time_bound == "no":
-    reminder += print("Consider completing it when you have free time.")
+    reminder = "Consider completing it when you have free time."
 else:
-    reminder += print("Invalid time sensitivity input.")        
+    reminder = "Invalid time sensitivity input."        
+print("\nReminder: {reminder}")
